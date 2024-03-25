@@ -13,10 +13,12 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from core.views import UserViewSet
 from core.views import AcessorioViewSet # nova linha
 from core.views import CategoriaViewSet
+from core.views import CorViewSet # nova linha
 
 router = DefaultRouter()
 router.register(r"acessorios", AcessorioViewSet) # nova linha
 router.register(r"categorias", CategoriaViewSet) # nova linha
+router.register(r"cores", CorViewSet) # nova linha
 router.register(r"users", UserViewSet, basename="users")
 ...
 
